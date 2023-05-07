@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Page Title</title>
+  </head>
+  <body>
+    <div class="container" id="bsr-wrapper"></div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <nav class="navbar navbar-expand-lg bg-light navbar-light"><a class="navbar-brand" href="index.html">Home</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbar-body">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="visualizations.html">Explore</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="jumbotron" style="background:linear-gradient(rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0)), url('Jupiter.png') no-repeat top left; background-size: cover;'">
+      <h1 class="display-4" style="color:#ffffff !important;">Home</h1>
+      <p class="lead" style="color:#ffffff !important;">Welcome to the solar system explorer!</p>
+      <p style="color:#ffffff !important;"></p>
+    </div>
+    <div class="container" id="bsr-wrapper">
+      <div class="my-5"></div>
+      <h1>Introduction</h1>
+      <p>Welcome to the solar system explorer! The purpose of this website is to give a brief overview of the solar system and, using some simple data analysis and visualizations, draw some conclusions about the different celestial bodies within the solar system. Select the explore tab in the navigation bar to access the data analysis. </p>
+      <h1>Sources</h1>
+      <div class="row">
+        <div class="col-md-9">
+          <p>All of the information on this webpage was taken from the The Solar System OpenData API. This source contains detailed information about 287 major bodies in the solar system including the sun, all eight planets, every significant moon, several major dwarf planets, a few comets, and few major asteroids. Each entry contains information on the ID, French name, English name, planet status, moons, semimajor axis, perihelion, aphelion, eccentricity, inclination, mass, volume, density, gravity, escape velocity, mean radius, equatorial radius, polar radius, flattening, dimension, sidereal orbit, sidereal rotation, moon status, discovered by, discovery date, alternative name, axial tilt, average temperature, main anomaly, argument periapsis, longitude of the ascending node, and body type for each object. Additionally, the API has a subaddress that contains the total known count of each object class. While there are not a tremendous amount of entries, this API is information-rich and there is significant potential for further data analysis beyond the scope of this project. </p>
+        </div>
+        <div class="col"><img src="api.png" class="img-fluid mr-auto d-block border-0 rounded-0"></div>
+  </body>
+</html>

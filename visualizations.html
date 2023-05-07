@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Page Title</title>
+  </head>
+  <body>
+    <div class="container" id="bsr-wrapper"></div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <nav class="navbar navbar-expand-lg bg-light navbar-light"><a class="navbar-brand" href="index.html">Home</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbar-body">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="visualizations.html">Explore</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="jumbotron" style="background:linear-gradient(rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0)), url('Earth.jpg') no-repeat top left; background-size: cover;'">
+      <h1 class="display-4" style="color:#ffffff !important;">Visualizations and Insights</h1>
+      <p class="lead" style="color:#ffffff !important;">Representation of data analysis</p>
+      <p style="color:#ffffff !important;"></p>
+    </div>
+    <div class="container" id="bsr-wrapper">
+  <h1>Exploring Orbits and Objects</h1>
+  <div class='my-5'></div>
+  <h3>Orbitial Distance in AU</h3>
+  <embed type="text/html" src="visOne.html"  width="100%" height="600"></embed>
+  <h6>Description</h6>
+  <p>The bar graph above depicts the distance of each planet from the Sun in astronomical units. One astronomical unit is equivalent to the distance between the Earth and the Sun (149,597,870.7 km or 92,955,807 miles).</p>
+  <h6>Insights</h6>
+  <p>Examining this graph, one relationship that appears is that the distance between the sun and a given planet appears to increase at an exponential rate as one moves further away from the Sun.</p>
+  <div class='my-5'></div>
+  <h3>Planetary Orbits</h3>
+  <embed type="text/html" src="visTwo.png"  width="100%" height="600"></embed>
+  <h6>Description</h6>
+  <p>The graph of ellipses shown above details the orbits of all of the planets around the Sun. This visualization uses the aphelion, the point at which an object is furthest from the sun, and perihelion, the point at which an object is closest to the sun, values to improve the accuracy of the graph.</p>
+  <h6>Insights</h6>
+  <p>Looking at the orbits of the planets closest to the sun–namely Mercury, Venus, Earth, and Mars–they are much closer together compared than the further planets. This supports the conclusion from the previous visualization that the orbits increase at an exponential rate. Another conclusion from this graph is that Uranus and Neptune have very large, near-circular orbits whereas the others have a clearer elliptical shape. In particular, Mars has a very ellipse-like orbit in comparison to the other planets.</p>
+  <div class='my-5'></div>
+  <h3>Number of Solar System Bodies by Type</h3>
+  <embed type="text/html" src="visThree.html"  width="100%" height="600"></embed>
+  <h6>Description</h6>
+  <p>The bar graph above visualizes the number of different bodies in our solar system. The chart is organized into seven different classes: planets, dwarf planets, asteroids, comets, planetary moons, dwarf planet moons, and asteroid moons. The y-axis is in logarithmic scale in order to make the graph more readable.</p>
+  <h6>Insights</h6>
+  <p>Comparing all the classes, there are far more asteroids, with a count of over 1.1 million, in the solar system than any other class. Comets are the second most common with a count of 3,743 however this is tiny in comparison to the number of asteroids. Planets are the smallest class with only eight members, making them significantly outnumbered by their moons.</p>
+  <div class='py-3 my-4'></div>
+  <h1>Exploring Mass, Volume, and Gravity</h1>
+  <div class='my-5'></div>
+  <h3>Solar System Mass by Object Type</h3>
+  <embed type="text/html" src="visFour.html"  width="100%" height="600"></embed>
+  <h6>Description</h6>
+  <p>The three pie charts show distribution of mass in the solar system. The first pie chart includes all of the legend elements. The second pie chart excludes the Sun for better readability. The third chart excludes both the Sun and the combined mass of the planets. As a side note, the asteroids class here absorbs all the classes in the previous visualization not listed in the legend. Additionally, this value is an estimate established using the mass of the Moon and a NASA estimate placing the total asteroid mass below the mass of the Moon.</p>
+  <h6>Insights</h6>
+  <p>From the first pie chart, it is apparent that the Sun makes up the vast majority of the mass of the entire solar system at 99.9% of the total. Once the Sun is removed, a similar situation occurs with the planets, meaning they dominate the remainder of the mass. If both the Sun and the planets are removed, moons then take up the majority of the mass at 85.1%. Based on the number of each object type, discussed in the previous visualization, in the solar system this seems counterintuitive. However, while there are a ton of asteroids, they are not particularly massive so their total mass is not very large whereas there is only one Sun and a few planets but their masses are huge in comparison.</p>
+  <div class='my-5'></div>
+  <h3>Planets Compared by Mass and Volume</h3>
+  <h4>Mass Comparison</h4>
+  <embed type="text/html" src="visFiveOne.html"  width="100%" height="600"></embed>
+  <h4>Volume Comparison</h4>
+  <embed type="text/html" src="visFiveTwo.html"  width="100%" height="600"></embed>
+  <h6>Description</h6>
+  <p>The two bar graphs depict the mass of each planet, in kilograms on a logarithmic scale, and the volume of each planet, in kilometers cubed on a logarithmic scale, with different colors for each.</p>
+  <h6>Insights</h6>
+  <p>Examining the mass graph, a distinct difference between the rocky planets—Mercury, Venus, Earth, and Mars—and the gas giants—Jupiter, Saturn, Uranus, and Neptune—is immediately clear. The gas giants are all significantly more massive than the rocky planets. Looking at the volume graph, the same trend appears when the rocky planets and gas giants are compared. However, comparing the two graphs, another couple relationships appear. First, the rocky planets rank in the same place for both mass and volume. Second, the gas giants do not rank in the same way since Uranus, which is less massive than Neptune, has a slightly larger volume than Neptune.</p>
+  <div class='my-5'></div>
+  <h3>Weight on Different Celestial Objects</h3>
+  <embed type="text/html" src="visSix.html"  width="100%" height="600"></embed>
+  <h6>Description</h6>
+  <p>The bar graph above shows the weight, in Newtons, of a 70 kg object on the surface of the eight planets as well as on the surfaces of the Moon, Ceres, and Pluto.</p>
+  <h6>Insights</h6>
+  <p>Looking at the bar graph, the closeness of several gravitational forces stands out as unusual. For example, the weight of an object on Mars, which is significantly more massive than Mercury, is roughly the same as it would be on Mercury. Even more glaring is the fact that Uranus, despite its huge mass, has a lower gravitational acceleration than the Earth. However, this relation is quite normal as a result of the inverse square law which states that gravity increases proportionally to mass of the objects involved but also decreases proportionally with radius squared. In short, this means that the larger radii of Mars and Uranus, despite their larger mass, causes the gravitational acceleration to be more similar to those of Mercury and Earth respectively.</p>
+  <div class='my-5'></div>
+</div>
+  </body>
+</html>
